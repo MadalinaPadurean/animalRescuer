@@ -17,10 +17,11 @@ public class App {
         animal.happinessLevel = 10;
         animal.favoriteFoodName = "Running";
         animal.favoriteActivityName = "Cookies";
-        EntertainmentActivity activity = new EntertainmentActivity();
+
+        EntertainmentActivity activity = new EntertainmentActivity("Running");
         activity.name = "Running";
 
-        Food food = new Food();
+        Food food = new Food("Purina");
         food.name = "Purina";
         food.quantity = 10;
         food.price = 78.99;
