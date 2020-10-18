@@ -7,41 +7,40 @@ public class App {
 
     public static void main(String[] args) {
         Rescuer rescuer = new Rescuer();
-        rescuer.name = "Lucky";
-        rescuer.money = 400;
+        rescuer.setName("Lucky");
+        rescuer.setMoney(400);
 
         Animal animal = new Animal();
-        animal.name = "Luna";
-        animal.age = 2.5;
-        animal.healhLevel = 10;
-        animal.happinessLevel = 10;
-        animal.favoriteFoodName = "Running";
-        animal.favoriteActivityName = "Cookies";
+        animal.setName("Luna");
+        animal.setAge(2.5);
+        animal.setHealhLevel(10);
+        animal.setHappinessLevel(10);
+        animal.setFavoriteActivityName("Running");
+        animal.setFavoriteFoodName("Cookies");
+
 
         EntertainmentActivity activity = new EntertainmentActivity("Running");
-        activity.name = "Running";
+        activity.setName("Running");
 
         Food food = new Food("Purina");
-        food.name = "Purina";
-        food.quantity = 10;
-        food.price = 78.99;
-        food.inStock= true;
-        food.expiryDate = LocalDateTime.of(2021, 12, 31, 0, 0);
+        food.setName("Purina");
+        food.setQuantity(10);
+        food.setPrice(78.99);
+        food.setInStock(true);
+        food.setExpiryDate(LocalDateTime.of(2021,12,31,0,0));
 
         MedicalStaff medic = new MedicalStaff();
-        medic.name = "Dr. Lu";
-        medic.specialization = "General Medicine";
+        medic.setName("Dr. Lu");
+        medic.setSpecialization("General Medicine");
+
 
         Game game = new Game();
-        game.rescuer = rescuer;
-        game.animal = animal;
-        game.medic = medic;
+        game.setRescuer(rescuer);
+        game.setAnimal(animal);
+        game.setMedic(medic);
     }
 
     {
-
-
-
 
     }
 }
