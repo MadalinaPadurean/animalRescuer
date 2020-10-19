@@ -45,11 +45,11 @@ public class App {
 
         animal.expressJoy();
 
-        Dog dog = new Dog();
+        Animal dog = new Dog();
         dog.setName("Lola");
         dog.expressJoy();
 
-        Fish fish = new Fish();
+        Animal fish = new Fish();
         fish.setName("Gimmi");
         fish.expressJoy();
 
