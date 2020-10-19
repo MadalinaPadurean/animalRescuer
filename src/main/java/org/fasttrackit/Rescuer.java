@@ -23,6 +23,6 @@ public class Rescuer {
         System.out.println(this.name + "just gave some" + food.getName() + "food to" + animal.getName());
     }
     public void entertain(Animal animal, EntertainmentActivity activity) {
-        System.out.println(this.name+"just played some" + activity.getName() + "whih" + animal.getName());
+        System.out.println(this.name+"just played some" + activity.getName() + "with" + animal.getName());
     }
 }

@@ -4,6 +4,11 @@ public class Dog extends Animal {
 
    private double barkPower;
 
+   @Override
+   public void expressJoy() {
+       System.out.println(getName() + "'s tail is wagging");
+   }
+
     public double getBarkPower() {
         return barkPower;
     }

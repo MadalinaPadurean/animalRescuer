@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 public class App {
 
     public static void main(String[] args) {
+
         Rescuer rescuer = new Rescuer();
         rescuer.setName("Lucky");
         rescuer.setMoney(400);
@@ -38,6 +39,20 @@ public class App {
         game.setRescuer(rescuer);
         game.setAnimal(animal);
         game.setMedic(medic);
+
+        rescuer.feed(animal, food);
+        rescuer.entertain(animal, activity);
+
+        animal.expressJoy();
+
+        Dog dog = new Dog();
+        dog.setName("Lola");
+        dog.expressJoy();
+
+        Fish fish = new Fish();
+        fish.setName("Gimmi");
+        fish.expressJoy();
+
     }
 
     {

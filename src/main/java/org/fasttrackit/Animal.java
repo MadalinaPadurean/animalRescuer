@@ -9,6 +9,10 @@ public class Animal {
    private String favoriteActivityName;
    private String favoriteFoodName;
 
+   public void expressJoy() {
+       System.out.println(name + " is feeling good.");
+   }
+
     public String getName() {
         return name;
     }
